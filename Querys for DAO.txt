@@ -1,0 +1,17 @@
+public void saveOrUpdate(User user) {
+		if (user.getId() > 0) {
+			// update
+			String sql = "UPDATE user SET name=?, email=?, address=?, " + "telephone=? WHERE contact_id=?";
+			jdbcTemplate.update(sql, user.getName(), user.getEmail(), user.getAddress(), user.getTelephone(), user.getId());
+		} else {
+			// insert
+			String sql = "INSERT INTO user (name, email, address, telephone)" + " VALUES (?, ?, ?, ?)";
+			jdbcTemplate.update(sql, user.getName(), user.getEmail(), user.getAddress(), user.getTelephone());
+		}
+	}
+
+	public void delete(int contactId) {
+		String sql = "DELETE FROM user WHERE contact_id=?";
+		jdbcTemplate.update(sql, contactId);
+
+	}

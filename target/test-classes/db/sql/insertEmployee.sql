@@ -1,0 +1,37 @@
+INSERT INTO EMPLOYEE (
+	EMPLOYEE_ID, 
+	FIRST_NAME, 
+	LAST_NAME, 
+	ADDRESS, 
+	ACTIVE_IND, 
+	LAST_UPDATED_USERID, 
+	LAST_UPDATED_TMSTMP
+) 
+VALUES (
+	'20', 
+	'Kill', 
+	'Bill', 
+	'Hyd', 
+	'1', 
+	'Bill', 
+	TIMESTAMP '9999-12-31 00:00:00'
+);
+
+INSERT INTO EMPLOYEE (
+	EMPLOYEE_ID, 
+	FIRST_NAME, 
+	LAST_NAME, 
+	ADDRESS, 
+	ACTIVE_IND, 
+	LAST_UPDATED_USERID, 
+	LAST_UPDATED_TMSTMP
+) 
+VALUES (
+	'2', 
+	'Killar', 
+	'Biller', 
+	'Hy', 
+	'5', 
+	'Biller', 
+	TIMESTAMP '9998-1-31 00:00:00'
+);
